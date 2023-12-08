@@ -5,7 +5,7 @@ from cog import BasePredictor, Input, Path
 import os
 import sys
 import torch
-sys.path.append("style-aligned")
+sys.path.append("/style-aligned")
 import sa_handler
 from typing import List
 from weights_downloader import WeightsDownloader

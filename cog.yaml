@@ -18,6 +18,7 @@ build:
 
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.0.3/pget" && chmod +x /usr/local/bin/pget
+    - git clone https://github.com/google/style-aligned.git
 
 # predict.py defines how predictions are run on your model
 predict: "predict.py:Predictor"
