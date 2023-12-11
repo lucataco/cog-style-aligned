@@ -1,6 +1,7 @@
 import os
-import time
 import subprocess
+import time
+
 
 class WeightsDownloader:
     @staticmethod

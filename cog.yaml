@@ -2,11 +2,11 @@
 # Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
 build:
   gpu: true
-  cuda: "11.8"
+  cuda: "12.1"
   python_version: "3.11"
   python_packages:
     - "accelerate"
-    - "diffusers==0.21.4"
+    - "diffusers==0.24.0"
     - "einops"
     - "gradio==3.50.2"
     - "mediapy"
@@ -18,6 +18,7 @@ build:
 
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.0.3/pget" && chmod +x /usr/local/bin/pget
+    - git clone https://github.com/google/style-aligned.git
 
 # predict.py defines how predictions are run on your model
 predict: "predict.py:Predictor"
